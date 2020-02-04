@@ -1,5 +1,5 @@
 # CMPT459
-This is the team project of CMPT459, SFU, 2020 Spring. Contributors:<br>
+This is the team project of CMPT459, 2020 Spring, SFU. Contributors:<br>
   Chen Zhao<br>
   Duo Lu<br>
   Ziyi An<br>
