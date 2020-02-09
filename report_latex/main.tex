@@ -1,57 +1,50 @@
-\documentclass[10pt,twocolumn,letterpaper]{article}
+\documentclass[12pt,twocolumn,letterpaper]{article}
 
-
+\usepackage{layout}
 \usepackage{times}
 \usepackage{epsfig}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-% Include other packages here, before hyperref.
-
-% If you comment hyperref and then uncomment it, you should delete
-% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
-% run, let it finish, and you should be clear).
-\usepackage[breaklinks=true,bookmarks=false]{hyperref}
-
-
-% Pages are numbered in submission mode, and unnumbered in camera-ready
-%\ifcvprfinal\pagestyle{empty}\fi
-\setcounter{page}{1}
+% \documentclass[12pt,letter]{article}
+% \usepackage{blindtext}
+\usepackage{fullpage}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[    natbib=true,
+    style=numeric,
+    sorting=none]{biblatex}
+\addbibresource{text.bib}
+\setlength{\headsep}{5pt}
 \begin{document}
+\begin{titlepage}
+	\centering
+	\setlength{\headsep}{15pt}
+	{\scshape\huge CMPT459 Data Mining\\\par}
+	\vspace{4cm}
+% 	{\scshape \large IJCSI International Journal of Computer Science Issues, Volume 10, Issue 5, No 1, September 2013\par}
+% 	\vspace{1.5cm}
+	{\LARGE \bf Milestone1\par}
+	\vspace{3cm}
+	
+	\vfill
+	{By\\\par
+	\vspace{0.3cm}
+	\itshape Duo Lu 301368672\\
+	\vspace{0.3cm}
+	\itshape Chen Zhao 301308092\\
+	\vspace{0.3cm}
+	\itshape Ziyi An 301371687\\\par}
+	
+	
+	\vfill
 
-%%%%%%%%% TITLE
-\title{CMPT459 Data Mining\\
-Milestone1}
-
-
-\author{Ziyi An\\
-301371687\\
-% For a paper whose authors are all at the same institution,
-% omit the following lines up until the closing ``}''.
-% Additional authors and addresses can be added with ``\and'',
-% just like the second author.
-% To save space, use either the email address or home page, not both
-\and
-Chen Zhao\\
-301308092\\
-
-\and
-
-Duo Lu\\
-301368672
-}
-
-
-\maketitle
-%\thispagestyle{empty}
-
-
-
-%-------------------------------------------------------------------------
-
-
-
+% Bottom of the page
+    Github: https://github.com/Duo-Lu/CMPT459\\
+	{\large \today\par}
+\end{titlepage}
+%-------------------
 %------------------------------------------------------------------------
 
 
@@ -97,7 +90,7 @@ For the values of latitude and longitude, intuitively, we rule out some points a
     \label{fig:galaxy}
 \end{figure}
 
-\clearpage
+
 
 3. The proportion of target variable values (interest level) is represented in both pie chart and bar plot as follows:
 
@@ -221,14 +214,6 @@ Other variables either have no missing value, like managerID and created hour, o
   \item concluding each extracted feature into individual columns, as binary values, to indicate which specific feature is present to each rental record. (ie. dogs allowed, doorman, and laundry-in-unit, etc). Currently, every feature has been covered in a new column, which might be further discussed whether to keep or not.
 \end{itemize}
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=7cm]{featureMarix.png}
-    \caption{}
-    \label{fig:galaxy}
-\end{figure}
-
-
 
 \\ For 'Description' (Figure 12):
 \begin{itemize}
@@ -238,6 +223,14 @@ Other variables either have no missing value, like managerID and created hour, o
   \item concluding each extracted feature into individual columns, as binary values, to indicate which specific feature is present to each rental record. (ie. stainless steel', 'steel applianc', 'new york' and etc). Currently, every feature has been covered in a new column, which might be further discussed whether to keep or not.
 \end{itemize}
 
+% \clearpage
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=7cm]{featureMarix.png}
+    \caption{}
+    \label{fig:galaxy}
+\end{figure}
 
 \begin{figure}[h!]
     \centering
